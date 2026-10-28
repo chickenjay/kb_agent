@@ -1,5 +1,9 @@
 # 知据 · 企业知识问答 Agent
 
+题号：**3**。AI 辅助范围：代码生成与测试；个人修改：修正技术方案。提交信息见 [submission.json](submission.json)。
+
+项目累计墙钟用时约 **1 小时 35 分钟**（统计截至 2026-10-28 13:34:02，UTC+8），其中首个可提交版本用时 **1 小时 22 分钟**；包含交互和必要等待，详见 [用时依据](examples/verification/project-time.json)。
+
 用原文回答制度问题，让冲突、缺口和执行过程可见。提供 Tailwind CSS Web 页面、实时 HTTP 接口与 CLI，三者复用同一套 LangGraph Agent。
 
 > 当前交付状态：已用 `https://api.deepseek.com` 的 `deepseek-flash` 完成真实测试，完整回归 20/20 自动检查通过；扩充后的 Mock 也是 20/20。首轮真实失败、定向复测与最终回归全部保留。Mock 是脚本化替身，不能代替真实决策验证；语义和候选人个人核验仍需复核。见 [评估报告](docs/03-evaluation.md)。
@@ -11,7 +15,7 @@
 - [技术方案 spec.md](spec.md)：架构、接口、事件协议与验收。
 - [正常回答](examples/evaluation/mock/normal/output.json)、[冲突回答](examples/evaluation/mock/conflict/output.json)、[持续工具失败](examples/evaluation/mock/persistent_failure/output.json)。每个目录均有输入、原始 Trace 和本次资料快照。
 - [扩充后的 Mock 汇总](examples/evaluation/mock-expanded/summary.json)、[真实模型完整回归](examples/evaluation/deepseek-flash-regression/summary.json)、[首轮真实失败](examples/evaluation/deepseek-flash-full/summary.json)。原始 10 组离线记录及早期 live/not_run 说明保留，属于历史状态。
-- [AI 使用及个人贡献边界](docs/04-ai-usage.md)、[复盘](docs/05-retrospective.md)。
+- [AI 使用及个人贡献](docs/04-ai-usage.md)、[复盘](docs/05-retrospective.md)、[实际用时统计](examples/verification/project-time.json)。首个可提交版本从 2026-10-28 11:59:23 到 13:21:23（UTC+8），用时 **1 小时 22 分钟**；含后续交付修订的累计墙钟时间在统计文件中单列，包含交互和必要等待，不等同于个人手工工时。
 
 ## 环境与安装
 
@@ -112,4 +116,4 @@ npm test
 - 已验证指定 DeepSeek 模型和这组合成场景；不能据此保证其他服务、模型、思考模式或未见资料的效果。即使指定 JSON 模式，实际响应仍出现过拼接对象，客户端校验不可省略。
 - 检索实验是小型合成集，词典与查询存在人工选择偏差；不代表企业大规模资料效果。
 - 无文档权限、持久化会话、并发容量保障及生产部署配置，仅在本机环回地址演示。
-- 仓库地址：[chickenjay/kb_agent](https://github.com/chickenjay/kb_agent)。最终提交 SHA 使用 `git rev-parse HEAD` 查询，并随交付信息提供，避免在同一提交中循环记录自身 SHA。候选人仍需核验代码、补充个人贡献和实际用时，以及确认题号。
+- 仓库地址：[chickenjay/kb_agent](https://github.com/chickenjay/kb_agent)，题号为 3。最终提交 SHA 使用 `git rev-parse HEAD` 查询，并随交付信息提供，避免在同一提交中循环记录自身 SHA。个人贡献和用时口径已记录；自然语言答案的本人语义复核仍与自动检查结果分开。

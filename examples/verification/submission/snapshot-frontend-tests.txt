@@ -1,17 +1,17 @@
-✔ UTF-8 Chinese split at every byte with CRLF and heartbeats (1.7753ms)
-✔ multiple events in one chunk and split event delimiter (0.1996ms)
-✔ unterminated final event never counts as completed (18.1183ms)
-✔ normal stream finishes exactly once (0.3671ms)
-✔ network end without final is failure and makes no second fetch (0.2958ms)
-✔ wrong run and out of order sequence are rejected (0.4066ms)
-✔ HTTP preflight error remains an error, not a stream (0.9392ms)
-✔ multiline data is joined and comment ignored (0.5971ms)
-✔ idle is not completed (0.5833ms)
-✔ tool failure does not finish the whole run (0.1401ms)
-✔ only final makes output available (0.8113ms)
-✔ interruption and cancellation are incomplete with no fabricated output (0.1482ms)
-✔ an incomplete final is never presented as successful answer (0.1473ms)
-✔ events cannot leak into a finished run (0.3475ms)
+✔ UTF-8 Chinese split at every byte with CRLF and heartbeats (1.6955ms)
+✔ multiple events in one chunk and split event delimiter (0.1898ms)
+✔ unterminated final event never counts as completed (17.1989ms)
+✔ normal stream finishes exactly once (0.3438ms)
+✔ network end without final is failure and makes no second fetch (0.2779ms)
+✔ wrong run and out of order sequence are rejected (0.3928ms)
+✔ HTTP preflight error remains an error, not a stream (0.9086ms)
+✔ multiline data is joined and comment ignored (0.5537ms)
+✔ idle is not completed (0.5498ms)
+✔ tool failure does not finish the whole run (0.1321ms)
+✔ only final makes output available (0.578ms)
+✔ interruption and cancellation are incomplete with no fabricated output (0.129ms)
+✔ an incomplete final is never presented as successful answer (0.1218ms)
+✔ events cannot leak into a finished run (0.2046ms)
 ℹ tests 14
 ℹ suites 0
 ℹ pass 14
@@ -19,4 +19,4 @@
 ℹ cancelled 0
 ℹ skipped 0
 ℹ todo 0
-ℹ duration_ms 118.5342
+ℹ duration_ms 119.7712

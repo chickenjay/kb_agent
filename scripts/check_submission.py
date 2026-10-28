@@ -28,12 +28,22 @@ def audit():
         sys.stdout.reconfigure(encoding="utf-8")
     started = time.monotonic()
     paths = sorted(set(p for p in git("ls-files", "--cached", "--others", "--exclude-standard", "-z").decode("utf-8").split("\0") if p))
-    required = ["README.md", "spec.md", "requirements.txt", "requirements.lock.txt", "pyproject.toml", "package.json", "package-lock.json", ".env.example", "config.example.toml", *[f"docs/0{i}-{name}.md" for i, name in enumerate(("requirements", "solution", "evaluation", "ai-usage", "retrospective"), 1)]]
+    required = ["README.md", "spec.md", "submission.json", "requirements.txt", "requirements.lock.txt", "pyproject.toml", "package.json", "package-lock.json", ".env.example", "config.example.toml", *[f"docs/0{i}-{name}.md" for i, name in enumerate(("requirements", "solution", "evaluation", "ai-usage", "retrospective"), 1)]]
     problems = []
     checks = {}
     missing = sorted(set(required) - set(paths))
     if missing:
         problems.append("Missing required material: " + ", ".join(missing))
+    for prefix in ("src/", "tests/", "examples/", "data/"):
+        if not any(path.startswith(prefix) for path in paths):
+            problems.append("Missing required non-empty directory: " + prefix)
+    submission = json.loads((ROOT / "submission.json").read_text(encoding="utf-8")) if (ROOT / "submission.json").exists() else {}
+    if not isinstance(submission.get("question_number"), int) or submission["question_number"] < 1:
+        problems.append("Question number is not recorded")
+    if not submission.get("ai_assistance") or not submission.get("personal_modifications"):
+        problems.append("AI assistance or personal contribution is not recorded")
+    if not submission.get("time_record") or not (ROOT / submission["time_record"]).is_file():
+        problems.append("Project time record is missing")
     forbidden = [p for p in paths if p == "config.local.toml" or p.startswith((".venv/", "node_modules/", ".runtime/", ".git/")) or p == ".env"]
     if forbidden:
         problems.append("Private/runtime files in candidate set: " + ", ".join(forbidden))
@@ -153,7 +163,7 @@ def audit():
     for relative in paths:
         if relative.startswith(("src/", "tests/", "data/", "web/")):
             source_hash.update(relative.encode() + b"\0" + (ROOT / relative).read_bytes())
-    report = {"generated_at": datetime.now(timezone.utc).isoformat(), "status": "passed" if not problems else "failed", "scope": "Exact Git candidate set; private credentials and local dependencies excluded; offline reviewer snapshot; no paid model calls", "checks": checks, "source_sha256": source_hash.hexdigest(), "reviewer_snapshot_checks": results, "elapsed_seconds": round(time.monotonic() - started, 3), "problems": problems, "candidate_confirmations_pending": ["题号仅有题目名称，需本人确认编号", "个人实际用时与独立贡献", "本人语义核验及复盘确认"]}
+    report = {"generated_at": datetime.now(timezone.utc).isoformat(), "status": "passed" if not problems else "failed", "scope": "Exact Git candidate set; private credentials and local dependencies excluded; offline reviewer snapshot; no paid model calls", "checks": checks, "submission_info": submission, "source_sha256": source_hash.hexdigest(), "reviewer_snapshot_checks": results, "elapsed_seconds": round(time.monotonic() - started, 3), "problems": problems, "candidate_confirmations_pending": ["本人逐例语义复核（自动检查不替代人工）"]}
     (REPORT_DIR / "summary.json").write_text(json.dumps(report, ensure_ascii=False, indent=2), encoding="utf-8")
     print(json.dumps(report, ensure_ascii=False, indent=2))
     return 0 if not problems else 1

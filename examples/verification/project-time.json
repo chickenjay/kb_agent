@@ -1,0 +1,30 @@
+{
+  "question_number": 3,
+  "timezone": "Asia/Singapore (UTC+8)",
+  "started_at": "2026-10-28T11:59:23+08:00",
+  "start_evidence": "examples/verification/timing.json: first_recorded_implementation_time",
+  "first_deliverable": {
+    "commit": "2ed6be6f309966b9457fce25ac038173bdff96cd",
+    "completed_at": "2026-10-28T13:21:23+08:00",
+    "seconds": 4920,
+    "minutes": 82.0,
+    "display": "1小时22分钟0秒"
+  },
+  "including_followup_revisions": {
+    "statistics_cutoff": "2026-10-28T13:34:02.857090+08:00",
+    "seconds": 5679,
+    "minutes": 94.65,
+    "display": "1小时34分钟39秒"
+  },
+  "definition": "可核验项目墙钟时间，含AI辅助代码生成、测试、工具执行、交互、必要等待和交付修订；不是单独测量的个人手工工时。",
+  "not_measured": [
+    "首次实现记录之前的方案讨论",
+    "个人手工操作与AI执行的独立工时拆分"
+  ],
+  "not_included": "本次统计截止之后的操作",
+  "candidate_confirmed_personal_modifications": "修正技术方案",
+  "ai_assistance": [
+    "代码生成",
+    "测试"
+  ]
+}

@@ -80,6 +80,6 @@ test_original_quote_does_not_guarantee_semantic_support (test_validation.Validat
 test_unread_source_rejected (test_validation.ValidationTests.test_unread_source_rejected) ... ok
 
 ----------------------------------------------------------------------
-Ran 80 tests in 7.655s
+Ran 80 tests in 7.209s
 
 OK
