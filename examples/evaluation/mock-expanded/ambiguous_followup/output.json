@@ -1,0 +1,13 @@
+{
+  "status": "needs_clarification",
+  "answer": "目前缺少业务对象，无法确定需要查询哪一项制度。",
+  "citations": [],
+  "conflicts": [],
+  "gaps": [
+    "没有可用于理解该追问的历史或具体业务对象。"
+  ],
+  "follow_up_question": "请说明是在问哪项业务或哪种报销流程。",
+  "termination_reason": "awaiting_clarification",
+  "run_id": "5116dbf4457d4e1391e7a4c75a585ebf",
+  "mode": "mock"
+}

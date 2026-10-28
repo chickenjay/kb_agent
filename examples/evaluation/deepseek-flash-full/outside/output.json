@@ -1,0 +1,13 @@
+{
+  "status": "insufficient_evidence",
+  "answer": "在本次可检索的制度文档中，未找到关于公司股票期权行权价格的任何条款或规定，因此无法给出具体行权价格。",
+  "citations": [],
+  "conflicts": [],
+  "gaps": [
+    "缺少股票期权/股权激励计划相关制度文档，无法确认行权价格的确定方式或具体数值。"
+  ],
+  "follow_up_question": "请提供股票期权激励计划或相关制度文档，或确认公司是否设有此类制度。",
+  "termination_reason": "insufficient_evidence",
+  "run_id": "d9ef46a9c14d4f1390f3fb47ab78b711",
+  "mode": "live"
+}

@@ -1,0 +1,289 @@
+{
+  "mode": "live",
+  "generated_at": "2026-10-28T04:26:15.044774+00:00",
+  "semantic_support_review": "not_run: 需人工逐例核对，不以自动来源校验替代",
+  "acceptance": "pending_live_validation",
+  "cases": [],
+  "retrieval": {
+    "baseline": {
+      "recall_at_5": 0.5833333333333334,
+      "queries": [
+        {
+          "query": "报销期限",
+          "relevant": [
+            "D01",
+            "D02"
+          ],
+          "retrieved": [
+            "D01",
+            "D02",
+            "D08",
+            "D04",
+            "D03"
+          ],
+          "recall_at_5": 1.0
+        },
+        {
+          "query": "差旅住宿标准",
+          "relevant": [
+            "D03"
+          ],
+          "retrieved": [
+            "D03",
+            "D04"
+          ],
+          "recall_at_5": 1.0
+        },
+        {
+          "query": "差旅报销凭证",
+          "relevant": [
+            "D04"
+          ],
+          "retrieved": [
+            "D04",
+            "D03",
+            "D01",
+            "D02",
+            "D08"
+          ],
+          "recall_at_5": 1.0
+        },
+        {
+          "query": "办公用品采购流程",
+          "relevant": [
+            "D05"
+          ],
+          "retrieved": [
+            "D05",
+            "D06"
+          ],
+          "recall_at_5": 1.0
+        },
+        {
+          "query": "员工请假申请",
+          "relevant": [
+            "D06"
+          ],
+          "retrieved": [
+            "D06",
+            "D01",
+            "D02",
+            "D05",
+            "D04"
+          ],
+          "recall_at_5": 1.0
+        },
+        {
+          "query": "企业账号密码重置",
+          "relevant": [
+            "D07"
+          ],
+          "retrieved": [
+            "D07"
+          ],
+          "recall_at_5": 1.0
+        },
+        {
+          "query": "财务服务工作时间",
+          "relevant": [
+            "D08"
+          ],
+          "retrieved": [
+            "D08",
+            "D07"
+          ],
+          "recall_at_5": 1.0
+        },
+        {
+          "query": "报帐截止",
+          "relevant": [
+            "D01",
+            "D02"
+          ],
+          "retrieved": [],
+          "recall_at_5": 0.0
+        },
+        {
+          "query": "住店",
+          "relevant": [
+            "D03"
+          ],
+          "retrieved": [],
+          "recall_at_5": 0.0
+        },
+        {
+          "query": "票据",
+          "relevant": [
+            "D04"
+          ],
+          "retrieved": [],
+          "recall_at_5": 0.0
+        },
+        {
+          "query": "口令",
+          "relevant": [
+            "D07"
+          ],
+          "retrieved": [],
+          "recall_at_5": 0.0
+        },
+        {
+          "query": "证明材料",
+          "relevant": [
+            "D04"
+          ],
+          "retrieved": [],
+          "recall_at_5": 0.0
+        }
+      ]
+    },
+    "enhanced": {
+      "recall_at_5": 1.0,
+      "queries": [
+        {
+          "query": "报销期限",
+          "relevant": [
+            "D01",
+            "D02"
+          ],
+          "retrieved": [
+            "D01",
+            "D02",
+            "D08",
+            "D04",
+            "D03"
+          ],
+          "recall_at_5": 1.0
+        },
+        {
+          "query": "差旅住宿标准",
+          "relevant": [
+            "D03"
+          ],
+          "retrieved": [
+            "D03",
+            "D04"
+          ],
+          "recall_at_5": 1.0
+        },
+        {
+          "query": "差旅报销凭证",
+          "relevant": [
+            "D04"
+          ],
+          "retrieved": [
+            "D04",
+            "D01",
+            "D02",
+            "D03",
+            "D08"
+          ],
+          "recall_at_5": 1.0
+        },
+        {
+          "query": "办公用品采购流程",
+          "relevant": [
+            "D05"
+          ],
+          "retrieved": [
+            "D05",
+            "D06"
+          ],
+          "recall_at_5": 1.0
+        },
+        {
+          "query": "员工请假申请",
+          "relevant": [
+            "D06"
+          ],
+          "retrieved": [
+            "D06",
+            "D01",
+            "D02",
+            "D05",
+            "D04"
+          ],
+          "recall_at_5": 1.0
+        },
+        {
+          "query": "企业账号密码重置",
+          "relevant": [
+            "D07"
+          ],
+          "retrieved": [
+            "D07"
+          ],
+          "recall_at_5": 1.0
+        },
+        {
+          "query": "财务服务工作时间",
+          "relevant": [
+            "D08"
+          ],
+          "retrieved": [
+            "D08",
+            "D07"
+          ],
+          "recall_at_5": 1.0
+        },
+        {
+          "query": "报帐截止",
+          "relevant": [
+            "D01",
+            "D02"
+          ],
+          "retrieved": [
+            "D01",
+            "D02",
+            "D08",
+            "D04",
+            "D03"
+          ],
+          "recall_at_5": 1.0
+        },
+        {
+          "query": "住店",
+          "relevant": [
+            "D03"
+          ],
+          "retrieved": [
+            "D03"
+          ],
+          "recall_at_5": 1.0
+        },
+        {
+          "query": "票据",
+          "relevant": [
+            "D04"
+          ],
+          "retrieved": [
+            "D04"
+          ],
+          "recall_at_5": 1.0
+        },
+        {
+          "query": "口令",
+          "relevant": [
+            "D07"
+          ],
+          "retrieved": [
+            "D07"
+          ],
+          "recall_at_5": 1.0
+        },
+        {
+          "query": "证明材料",
+          "relevant": [
+            "D04"
+          ],
+          "retrieved": [
+            "D04"
+          ],
+          "recall_at_5": 1.0
+        }
+      ]
+    }
+  },
+  "status": "not_run",
+  "reason": "缺少真实模型环境变量；未降级为 Mock。"
+}

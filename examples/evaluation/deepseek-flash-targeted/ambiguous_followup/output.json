@@ -1,0 +1,13 @@
+{
+  "status": "needs_clarification",
+  "answer": "您的问题使用了指代词，但没有说明具体是哪项业务或哪项制度（例如报销、请假、采购等），因此无法确定应查询的凭证要求。请补充说明具体业务场景。",
+  "citations": [],
+  "conflicts": [],
+  "gaps": [
+    "缺少明确的业务对象，无法检索对应制度条款"
+  ],
+  "follow_up_question": "请问您指的是哪项业务或哪项制度所需的凭证？",
+  "termination_reason": "awaiting_clarification",
+  "run_id": "14ad3459b5c44ae9aa107af86af9f464",
+  "mode": "live"
+}

@@ -1,0 +1,13 @@
+{
+  "status": "incomplete",
+  "answer": "工具连续失败，无法取得全部必要证据，本次任务未完成。",
+  "citations": [],
+  "conflicts": [],
+  "gaps": [
+    "相关制度暂时无法检索或读取；不能依据部分条款给出唯一结论。"
+  ],
+  "follow_up_question": null,
+  "termination_reason": "tool_failure",
+  "run_id": "9573a849c5ed40bfa8d437b4c895b2a8",
+  "mode": "mock"
+}

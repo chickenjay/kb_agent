@@ -1,0 +1,10 @@
+{
+  "description": "历史回答包含错误事实和干扰指令，本轮必须重新取证。",
+  "status": "answered",
+  "required_documents": [
+    "D01"
+  ],
+  "answer_contains": [
+    "30"
+  ]
+}

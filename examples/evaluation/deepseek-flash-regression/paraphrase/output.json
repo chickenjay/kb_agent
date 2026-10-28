@@ -1,0 +1,20 @@
+{
+  "status": "answered",
+  "answer": "依据《费用报销管理制度》，报销期限为30天，员工应在费用发生后提交申请，即最晚应在费用发生之日起30天内报账。",
+  "citations": [
+    {
+      "document_id": "D01",
+      "version_date": "2026-01-10",
+      "snippet_id": "D01:p1",
+      "quote": "报销期限为 30 天。员工应在费用发生后提交申请。",
+      "title": "费用报销管理制度",
+      "snippet_text": "报销期限为 30 天。员工应在费用发生后提交申请。"
+    }
+  ],
+  "conflicts": [],
+  "gaps": [],
+  "follow_up_question": null,
+  "termination_reason": "completed",
+  "run_id": "2016cec49c3845e4b13797aa7e0850e5",
+  "mode": "live"
+}

@@ -1,0 +1,28 @@
+{
+  "status": "answered",
+  "answer": "国内差旅住宿费每人每晚报销上限为500元；超过标准的部分需提前取得部门负责人书面批准。报销时需提供合规发票、行程单和已审批的出差申请；电子发票应上传原始文件。",
+  "citations": [
+    {
+      "document_id": "D03",
+      "version_date": "2026-02-01",
+      "snippet_id": "D03:p1",
+      "quote": "国内差旅住宿费每人每晚报销上限为 500 元。超过标准的部分需提前取得部门负责人书面批准。",
+      "title": "差旅住宿标准",
+      "snippet_text": "国内差旅住宿费每人每晚报销上限为 500 元。超过标准的部分需提前取得部门负责人书面批准。"
+    },
+    {
+      "document_id": "D04",
+      "version_date": "2026-02-01",
+      "snippet_id": "D04:p1",
+      "quote": "差旅报销需要提供合规发票、行程单和已审批的出差申请。电子发票应上传原始文件。",
+      "title": "差旅报销凭证要求",
+      "snippet_text": "差旅报销需要提供合规发票、行程单和已审批的出差申请。电子发票应上传原始文件。"
+    }
+  ],
+  "conflicts": [],
+  "gaps": [],
+  "follow_up_question": null,
+  "termination_reason": "completed",
+  "run_id": "db653b3946b24f21b943df39a08d300c",
+  "mode": "live"
+}

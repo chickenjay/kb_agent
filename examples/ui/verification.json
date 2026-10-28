@@ -1,0 +1,57 @@
+{
+  "mode": "mock",
+  "generated_at": "2026-10-28T04:28:22.267723+00:00",
+  "tool": "Codex in-app browser",
+  "scope": "Actual local browser observations; not live LLM verification or real phone hardware",
+  "checks": [
+    {
+      "name": "desktop_conflict",
+      "passed": true,
+      "observed": "D01 30 days and D02 15 days, both citations, follow-up and five actions visible",
+      "viewport_width": 1600,
+      "page_width": 1583,
+      "screenshot": "desktop-conflict.jpg",
+      "run_id": "57737a746a7f"
+    },
+    {
+      "name": "stop_then_run_again",
+      "passed": true,
+      "observed": "Stop showed incomplete; backend trace has user_cancelled and zero tools; resubmission produced needs_clarification",
+      "server_trace": "cancelled-run/trace.jsonl"
+    },
+    {
+      "name": "mobile_layout",
+      "passed": true,
+      "viewport_width": 433,
+      "page_width": 416,
+      "observed": "Single column; no horizontal overflow; trace collapsed on reload",
+      "screenshot": "mobile-conflict.jpg"
+    },
+    {
+      "name": "context_followup",
+      "passed": true,
+      "observed": "History displayed; question about receipts read D04 and answered with its exact source",
+      "screenshot": "mobile-followup.jpg"
+    },
+    {
+      "name": "expand_citation",
+      "passed": true,
+      "observed": "Expanded D04:p1 displayed full original snippet"
+    },
+    {
+      "name": "mock_and_live_status",
+      "passed": true,
+      "observed": "Mock boundary visible; unconfigured live option disabled"
+    },
+    {
+      "name": "refresh_clears_history",
+      "passed": true,
+      "observed": "Reload returned welcome state with empty messages"
+    }
+  ],
+  "not_manually_verified": [
+    "clipboard permission behavior",
+    "download persistence across browser configurations",
+    "other browsers and real phone hardware"
+  ]
+}

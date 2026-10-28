@@ -1,0 +1,14 @@
+[
+  {"query":"报销期限", "relevant":["D01","D02"]},
+  {"query":"差旅住宿标准", "relevant":["D03"]},
+  {"query":"差旅报销凭证", "relevant":["D04"]},
+  {"query":"办公用品采购流程", "relevant":["D05"]},
+  {"query":"员工请假申请", "relevant":["D06"]},
+  {"query":"企业账号密码重置", "relevant":["D07"]},
+  {"query":"财务服务工作时间", "relevant":["D08"]},
+  {"query":"报帐截止", "relevant":["D01","D02"]},
+  {"query":"住店", "relevant":["D03"]},
+  {"query":"票据", "relevant":["D04"]},
+  {"query":"口令", "relevant":["D07"]},
+  {"query":"证明材料", "relevant":["D04"]}
+]

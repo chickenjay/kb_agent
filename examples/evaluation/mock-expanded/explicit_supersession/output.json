@@ -1,0 +1,20 @@
+{
+  "status": "answered",
+  "answer": "根据已读取的制度：D02：报销期限为 15 天",
+  "citations": [
+    {
+      "document_id": "D02",
+      "version_date": "2026-03-01",
+      "snippet_id": "D02:p1",
+      "quote": "本指引明确替代 D01《费用报销管理制度》，适用于原 D01 适用的全部员工。报销期限为 15 天。",
+      "title": "费用报销办理指引",
+      "snippet_text": "本指引明确替代 D01《费用报销管理制度》，适用于原 D01 适用的全部员工。报销期限为 15 天。"
+    }
+  ],
+  "conflicts": [],
+  "gaps": [],
+  "follow_up_question": null,
+  "termination_reason": "completed",
+  "run_id": "de364d4cddfc425bb84ea04adb6ddb9c",
+  "mode": "mock"
+}

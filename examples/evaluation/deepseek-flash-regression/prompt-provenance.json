@@ -1,0 +1,6 @@
+{
+  "recorded_at": "2026-10-28T04:58:10.588204+00:00",
+  "capture": "after_run",
+  "prompt_sha256": "19dfd6d8855a8ac6f4e2365e841210c0e9e22b9225d416aef9a7b3fb208e76c9",
+  "note": "本次回归加载的系统提示在运行后未再改动；该快照为事后记录，原Trace未包含提示哈希。后续新运行会在开始时记录哈希并保存prompt.txt。"
+}

@@ -1,0 +1,28 @@
+{
+  "status": "passed",
+  "base_url": "https://api.deepseek.com",
+  "requested_model": "deepseek-flash",
+  "options": {
+    "response_format": {
+      "type": "json_object"
+    },
+    "thinking": {
+      "type": "disabled"
+    },
+    "max_tokens": 2048,
+    "temperature": 0
+  },
+  "metadata": {
+    "requested_model": "deepseek-flash",
+    "response_model": "deepseek-flash",
+    "finish_reason": "stop",
+    "usage": {
+      "prompt_tokens": 45,
+      "completion_tokens": 5,
+      "total_tokens": 50,
+      "prompt_cache_hit_tokens": 0,
+      "prompt_cache_miss_tokens": 45
+    }
+  },
+  "returned_json": true
+}

@@ -1,0 +1,38 @@
+{
+  "status": "needs_clarification",
+  "answer": "发现相互冲突的条款，暂不能确定唯一适用期限。D01：报销期限为 30 天。员工应在费用发生后提交申请。；D02：报销期限为 15 天。员工应在费用发生后提交申请。",
+  "citations": [
+    {
+      "document_id": "D01",
+      "version_date": "2026-01-10",
+      "snippet_id": "D01:p1",
+      "quote": "报销期限为 30 天。员工应在费用发生后提交申请。",
+      "title": "费用报销管理制度",
+      "snippet_text": "报销期限为 30 天。员工应在费用发生后提交申请。"
+    },
+    {
+      "document_id": "D02",
+      "version_date": "2026-03-01",
+      "snippet_id": "D02:p1",
+      "quote": "报销期限为 15 天。员工应在费用发生后提交申请。",
+      "title": "费用报销办理指引",
+      "snippet_text": "报销期限为 15 天。员工应在费用发生后提交申请。"
+    }
+  ],
+  "conflicts": [
+    {
+      "description": "不同制度规定的报销期限不一致，未找到优先适用依据。",
+      "document_ids": [
+        "D01",
+        "D02"
+      ]
+    }
+  ],
+  "gaps": [
+    "缺少适用范围、明确替代关系或优先级依据。"
+  ],
+  "follow_up_question": "请确认适用哪份报销制度，或提供明确的适用范围、替代或优先依据。",
+  "termination_reason": "awaiting_clarification",
+  "run_id": "f8ab153f4c6f407a8c88afe0fbe859ab",
+  "mode": "mock"
+}

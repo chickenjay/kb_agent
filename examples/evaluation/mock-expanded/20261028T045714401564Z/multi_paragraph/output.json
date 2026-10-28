@@ -1,0 +1,28 @@
+{
+  "status": "answered",
+  "answer": "根据已读取的制度：D03：国内差旅住宿费每人每晚报销上限为 500 元。；D03：超过住宿标准的部分需提前取得部门负责人书面批准。",
+  "citations": [
+    {
+      "document_id": "D03",
+      "version_date": "2026-02-01",
+      "snippet_id": "D03:p1",
+      "quote": "国内差旅住宿费每人每晚报销上限为 500 元。",
+      "title": "差旅住宿标准",
+      "snippet_text": "国内差旅住宿费每人每晚报销上限为 500 元。"
+    },
+    {
+      "document_id": "D03",
+      "version_date": "2026-02-01",
+      "snippet_id": "D03:p2",
+      "quote": "超过住宿标准的部分需提前取得部门负责人书面批准。",
+      "title": "差旅住宿标准",
+      "snippet_text": "超过住宿标准的部分需提前取得部门负责人书面批准。"
+    }
+  ],
+  "conflicts": [],
+  "gaps": [],
+  "follow_up_question": null,
+  "termination_reason": "completed",
+  "run_id": "277ef6817f974bd2868bf36843f671e6",
+  "mode": "mock"
+}

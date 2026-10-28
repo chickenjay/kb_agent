@@ -1,0 +1,372 @@
+{
+  "mode": "mock",
+  "generated_at": "2026-10-28T04:13:27.691427+00:00",
+  "semantic_support_review": "not_run: 需人工逐例核对，不以自动来源校验替代",
+  "acceptance": "pending_live_validation",
+  "cases": [
+    {
+      "id": "normal",
+      "passed": true,
+      "problems": [],
+      "status": "answered",
+      "run_id": "cd9f40b6868440fdbd476ec9461e2ff7",
+      "path": "normal"
+    },
+    {
+      "id": "conflict",
+      "passed": true,
+      "problems": [],
+      "status": "needs_clarification",
+      "run_id": "2289eb6664434edb8e847660f76684a9",
+      "path": "conflict"
+    },
+    {
+      "id": "outside",
+      "passed": true,
+      "problems": [],
+      "status": "insufficient_evidence",
+      "run_id": "0b9c3a5fc94e4672a7f89bff84d675d9",
+      "path": "outside"
+    },
+    {
+      "id": "paraphrase",
+      "passed": true,
+      "problems": [],
+      "status": "answered",
+      "run_id": "2365f76e2b14480183da0afc66c97b3c",
+      "path": "paraphrase"
+    },
+    {
+      "id": "followup",
+      "passed": true,
+      "problems": [],
+      "status": "answered",
+      "run_id": "38077f14a8c9461f82dbe969679e8dcd",
+      "path": "followup"
+    },
+    {
+      "id": "transient_failure",
+      "passed": true,
+      "problems": [],
+      "status": "answered",
+      "run_id": "67be6f3bbcad4887a6aa2b6434b7722f",
+      "path": "transient_failure"
+    },
+    {
+      "id": "persistent_failure",
+      "passed": true,
+      "problems": [],
+      "status": "incomplete",
+      "run_id": "a1fe89f3adb04b93877f512bf1eead3c",
+      "path": "persistent_failure"
+    },
+    {
+      "id": "changed_45",
+      "passed": true,
+      "problems": [],
+      "status": "answered",
+      "run_id": "f584817601414dad8ea6368e25aed09f",
+      "path": "changed_45"
+    },
+    {
+      "id": "conflict_added",
+      "passed": true,
+      "problems": [],
+      "status": "needs_clarification",
+      "run_id": "42d2d7de01724711b8d04aca368b1854",
+      "path": "conflict_added"
+    },
+    {
+      "id": "conflict_removed",
+      "passed": true,
+      "problems": [],
+      "status": "answered",
+      "run_id": "4d2ba13b6ca845878bb238c871af8ac2",
+      "path": "conflict_removed"
+    }
+  ],
+  "retrieval": {
+    "baseline": {
+      "recall_at_5": 0.5833333333333334,
+      "queries": [
+        {
+          "query": "报销期限",
+          "relevant": [
+            "D01",
+            "D02"
+          ],
+          "retrieved": [
+            "D01",
+            "D02",
+            "D08",
+            "D04",
+            "D03"
+          ],
+          "recall_at_5": 1.0
+        },
+        {
+          "query": "差旅住宿标准",
+          "relevant": [
+            "D03"
+          ],
+          "retrieved": [
+            "D03",
+            "D04"
+          ],
+          "recall_at_5": 1.0
+        },
+        {
+          "query": "差旅报销凭证",
+          "relevant": [
+            "D04"
+          ],
+          "retrieved": [
+            "D04",
+            "D03",
+            "D01",
+            "D02",
+            "D08"
+          ],
+          "recall_at_5": 1.0
+        },
+        {
+          "query": "办公用品采购流程",
+          "relevant": [
+            "D05"
+          ],
+          "retrieved": [
+            "D05",
+            "D06"
+          ],
+          "recall_at_5": 1.0
+        },
+        {
+          "query": "员工请假申请",
+          "relevant": [
+            "D06"
+          ],
+          "retrieved": [
+            "D06",
+            "D01",
+            "D02",
+            "D05",
+            "D04"
+          ],
+          "recall_at_5": 1.0
+        },
+        {
+          "query": "企业账号密码重置",
+          "relevant": [
+            "D07"
+          ],
+          "retrieved": [
+            "D07"
+          ],
+          "recall_at_5": 1.0
+        },
+        {
+          "query": "财务服务工作时间",
+          "relevant": [
+            "D08"
+          ],
+          "retrieved": [
+            "D08",
+            "D07"
+          ],
+          "recall_at_5": 1.0
+        },
+        {
+          "query": "报帐截止",
+          "relevant": [
+            "D01",
+            "D02"
+          ],
+          "retrieved": [],
+          "recall_at_5": 0.0
+        },
+        {
+          "query": "住店",
+          "relevant": [
+            "D03"
+          ],
+          "retrieved": [],
+          "recall_at_5": 0.0
+        },
+        {
+          "query": "票据",
+          "relevant": [
+            "D04"
+          ],
+          "retrieved": [],
+          "recall_at_5": 0.0
+        },
+        {
+          "query": "口令",
+          "relevant": [
+            "D07"
+          ],
+          "retrieved": [],
+          "recall_at_5": 0.0
+        },
+        {
+          "query": "证明材料",
+          "relevant": [
+            "D04"
+          ],
+          "retrieved": [],
+          "recall_at_5": 0.0
+        }
+      ]
+    },
+    "enhanced": {
+      "recall_at_5": 1.0,
+      "queries": [
+        {
+          "query": "报销期限",
+          "relevant": [
+            "D01",
+            "D02"
+          ],
+          "retrieved": [
+            "D01",
+            "D02",
+            "D08",
+            "D04",
+            "D03"
+          ],
+          "recall_at_5": 1.0
+        },
+        {
+          "query": "差旅住宿标准",
+          "relevant": [
+            "D03"
+          ],
+          "retrieved": [
+            "D03",
+            "D04"
+          ],
+          "recall_at_5": 1.0
+        },
+        {
+          "query": "差旅报销凭证",
+          "relevant": [
+            "D04"
+          ],
+          "retrieved": [
+            "D04",
+            "D01",
+            "D02",
+            "D03",
+            "D08"
+          ],
+          "recall_at_5": 1.0
+        },
+        {
+          "query": "办公用品采购流程",
+          "relevant": [
+            "D05"
+          ],
+          "retrieved": [
+            "D05",
+            "D06"
+          ],
+          "recall_at_5": 1.0
+        },
+        {
+          "query": "员工请假申请",
+          "relevant": [
+            "D06"
+          ],
+          "retrieved": [
+            "D06",
+            "D01",
+            "D02",
+            "D05",
+            "D04"
+          ],
+          "recall_at_5": 1.0
+        },
+        {
+          "query": "企业账号密码重置",
+          "relevant": [
+            "D07"
+          ],
+          "retrieved": [
+            "D07"
+          ],
+          "recall_at_5": 1.0
+        },
+        {
+          "query": "财务服务工作时间",
+          "relevant": [
+            "D08"
+          ],
+          "retrieved": [
+            "D08",
+            "D07"
+          ],
+          "recall_at_5": 1.0
+        },
+        {
+          "query": "报帐截止",
+          "relevant": [
+            "D01",
+            "D02"
+          ],
+          "retrieved": [
+            "D01",
+            "D02",
+            "D08",
+            "D04",
+            "D03"
+          ],
+          "recall_at_5": 1.0
+        },
+        {
+          "query": "住店",
+          "relevant": [
+            "D03"
+          ],
+          "retrieved": [
+            "D03"
+          ],
+          "recall_at_5": 1.0
+        },
+        {
+          "query": "票据",
+          "relevant": [
+            "D04"
+          ],
+          "retrieved": [
+            "D04"
+          ],
+          "recall_at_5": 1.0
+        },
+        {
+          "query": "口令",
+          "relevant": [
+            "D07"
+          ],
+          "retrieved": [
+            "D07"
+          ],
+          "recall_at_5": 1.0
+        },
+        {
+          "query": "证明材料",
+          "relevant": [
+            "D04"
+          ],
+          "retrieved": [
+            "D04"
+          ],
+          "recall_at_5": 1.0
+        }
+      ]
+    }
+  },
+  "passed": 10,
+  "total": 10,
+  "status": "passed",
+  "scope": "仅验证流程，不证明真实模型决策或语义支持。"
+}

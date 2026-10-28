@@ -1,0 +1,28 @@
+{
+  "status": "answered",
+  "answer": "财务部员工的报销期限为 30 天。依据《费用报销管理制度》，该制度适用范围为财务部，报销期限为 30 天。另检索到《费用报销办理指引》规定报销期限为 15 天，但其适用范围为销售部，不适用于财务部员工。",
+  "citations": [
+    {
+      "document_id": "D01",
+      "version_date": "2026-01-10",
+      "snippet_id": "D01:p1",
+      "quote": "适用范围：财务部。报销期限为 30 天。",
+      "title": "费用报销管理制度",
+      "snippet_text": "适用范围：财务部。报销期限为 30 天。"
+    },
+    {
+      "document_id": "D02",
+      "version_date": "2026-03-01",
+      "snippet_id": "D02:p1",
+      "quote": "适用范围：销售部。报销期限为 15 天。",
+      "title": "费用报销办理指引",
+      "snippet_text": "适用范围：销售部。报销期限为 15 天。"
+    }
+  ],
+  "conflicts": [],
+  "gaps": [],
+  "follow_up_question": null,
+  "termination_reason": "completed",
+  "run_id": "eafd55fd077b4b5f81c22f2a05aae4f7",
+  "mode": "live"
+}

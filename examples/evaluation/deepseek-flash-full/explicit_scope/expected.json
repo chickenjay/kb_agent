@@ -1,0 +1,11 @@
+{
+  "description": "用户范围与制度明确对应，可消解数值差异。",
+  "status": "answered",
+  "required_documents": [
+    "D01"
+  ],
+  "answer_contains": [
+    "30"
+  ],
+  "no_conflicts": true
+}

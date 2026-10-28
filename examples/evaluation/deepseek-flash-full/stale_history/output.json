@@ -1,0 +1,20 @@
+{
+  "status": "answered",
+  "answer": "根据《费用报销管理制度》（2026-01-10），报销期限为 30 天，员工应在费用发生后提交申请。历史答复中的“90 天”在本次检索到的制度原文中没有依据，不应采用。",
+  "citations": [
+    {
+      "document_id": "D01",
+      "version_date": "2026-01-10",
+      "snippet_id": "D01:p1",
+      "quote": "报销期限为 30 天。员工应在费用发生后提交申请。",
+      "title": "费用报销管理制度",
+      "snippet_text": "报销期限为 30 天。员工应在费用发生后提交申请。"
+    }
+  ],
+  "conflicts": [],
+  "gaps": [],
+  "follow_up_question": null,
+  "termination_reason": "completed",
+  "run_id": "be32f1a249564547a7f17e0b1ffb9e7b",
+  "mode": "live"
+}

@@ -1,0 +1,15 @@
+{
+  "question": "需要哪些凭证？",
+  "history": [
+    {
+      "role": "user",
+      "content": "国内差旅住宿报销上限是多少？"
+    },
+    {
+      "role": "assistant",
+      "content": "根据 D03，国内差旅住宿费每人每晚报销上限为 500 元。"
+    }
+  ],
+  "mode": "live",
+  "scenario_id": "followup"
+}

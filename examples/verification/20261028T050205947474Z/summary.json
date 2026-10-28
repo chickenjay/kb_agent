@@ -1,0 +1,28 @@
+{
+  "generated_at": "2026-10-28T05:02:15.367544+00:00",
+  "scope": "automated tests and dependency integrity; NOT live model evaluation",
+  "checks": [
+    {
+      "name": "python-tests",
+      "exit_code": 0,
+      "tests": 80,
+      "elapsed_seconds": 8.437,
+      "output": "python-tests.txt"
+    },
+    {
+      "name": "dependency-check",
+      "exit_code": 0,
+      "tests": null,
+      "elapsed_seconds": 0.75,
+      "output": "dependency-check.txt"
+    },
+    {
+      "name": "frontend-tests",
+      "exit_code": 0,
+      "tests": 14,
+      "elapsed_seconds": 0.188,
+      "output": "frontend-tests.txt"
+    }
+  ],
+  "status": "passed"
+}

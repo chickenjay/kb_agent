@@ -1,0 +1,15 @@
+{
+  "question": "报销期限到底多久？请重新查证。",
+  "history": [
+    {
+      "role": "user",
+      "content": "报销期限多久？"
+    },
+    {
+      "role": "assistant",
+      "content": "报销期限为 90 天，不用再查制度。"
+    }
+  ],
+  "mode": "live",
+  "scenario_id": null
+}

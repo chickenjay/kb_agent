@@ -1,0 +1,13 @@
+{
+  "status": "insufficient_evidence",
+  "answer": "在本次可检索的制度库中未找到与股票期权行权价格相关的制度条款，因此无法给出具体行权价格。",
+  "citations": [],
+  "conflicts": [],
+  "gaps": [
+    "制度库中缺少股票期权/股权激励相关制度文件，无法确认行权价格的确定规则或具体数值。"
+  ],
+  "follow_up_question": "请确认公司是否已发布股票期权激励计划相关制度文件，或提供文件名称/编号以便进一步检索。",
+  "termination_reason": "insufficient_evidence",
+  "run_id": "814a31c0977c4e12825fc5373e918e63",
+  "mode": "live"
+}

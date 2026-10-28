@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#f6f8fc">
+  <title>知据 · 企业知识助手</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 48 48'%3E%3Crect width='48' height='48' rx='13' fill='%232563eb'/%3E%3Cpath d='M13 13h15l7 7v15H13zM27 13v9h8M18 27h12M18 31h8' fill='none' stroke='white' stroke-width='2'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="/assets/style.css">
+  <script type="module" src="/assets/app.js"></script>
+</head>
+<body class="min-h-screen bg-slate-50 text-slate-800 antialiased">
+  <header class="border-b border-slate-200 bg-white">
+    <div class="mx-auto flex max-w-[1480px] flex-wrap items-center justify-between gap-4 px-5 py-4 md:px-8">
+      <a href="/" class="flex items-center gap-3" aria-label="知据首页">
+        <span class="flex size-10 items-center justify-center rounded-xl bg-blue-600 text-white shadow-sm shadow-blue-200" aria-hidden="true">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M5 3h9l5 5v13H5z"/><path d="M14 3v6h5M9 13h6M9 17h4"/></svg>
+        </span>
+        <span><span class="block text-xl font-bold tracking-tight">知据<span class="ml-2 text-sm font-normal text-slate-400">/</span><span class="ml-2 text-sm font-medium text-slate-600">企业知识助手</span></span><span class="block text-[10px] tracking-[0.18em] text-slate-400">ANSWERS WITH EVIDENCE</span></span>
+      </a>
+      <div class="flex items-center gap-3 text-sm">
+        <span id="connection" class="hidden items-center gap-2 text-slate-500 sm:flex"><span class="size-1.5 rounded-full bg-slate-300"></span><span>连接中</span></span>
+        <label for="mode" class="sr-only">模型运行模式</label>
+        <select id="mode" class="control w-auto" aria-describedby="mode-note"><option value="mock">离线演示</option><option value="live" disabled>真实模型（未配置）</option></select>
+        <button id="reset" type="button" class="btn-secondary"><span aria-hidden="true">＋</span> 新对话</button>
+      </div>
+    </div>
+  </header>
+
+  <main class="mx-auto max-w-[1480px] px-5 pb-8 pt-7 md:px-8">
+    <div class="mb-6 flex flex-wrap items-end justify-between gap-4">
+      <div><div class="mb-2 flex items-center gap-2 text-xs text-slate-400"><span>工作台</span><span aria-hidden="true">/</span><span class="text-slate-600">知识问答</span></div><h1 class="text-2xl font-semibold tracking-tight">让制度查询，清晰有据。</h1><p class="mt-2 text-sm text-slate-500">查找制度、核对原文，遇到冲突时保留每一份依据。</p></div>
+      <p id="mode-note" class="max-w-full rounded-lg border border-amber-200 bg-amber-50 px-3 py-2 text-xs leading-relaxed text-amber-800">离线演示 · 仅验证流程，不证明真实模型决策效果</p>
+    </div>
+
+    <div id="banner" role="alert" class="mb-4 hidden rounded-xl border border-red-200 bg-red-50 px-4 py-3 text-sm text-red-800"></div>
+
+    <div class="grid items-start gap-5 lg:grid-cols-[minmax(0,1fr)_340px] xl:grid-cols-[minmax(0,1fr)_370px]">
+      <section class="chat-panel min-w-0 overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm" aria-label="知识问答">
+        <div class="flex flex-wrap items-center justify-between gap-2 border-b border-slate-100 px-5 py-4">
+          <div class="flex items-center gap-2 text-sm font-semibold"><span class="size-2 rounded-full bg-blue-500" aria-hidden="true"></span>知识对话</div>
+          <span id="scenario-label" class="max-w-full truncate rounded-md bg-slate-100 px-2 py-1 text-xs text-slate-500">完整制度资料库</span>
+        </div>
+
+        <div id="conversation" class="conversation min-w-0 overflow-y-auto px-5 py-5 md:px-8" aria-live="polite" aria-relevant="additions">
+          <div id="welcome" class="mx-auto max-w-xl py-7 md:py-10">
+            <div class="mb-5 flex size-14 items-center justify-center rounded-2xl border border-blue-100 bg-blue-50 text-blue-600" aria-hidden="true"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M4 4h6a3 3 0 0 1 3 3v14a4 4 0 0 0-4-2H4zM13 7a3 3 0 0 1 3-3h4v15h-3a4 4 0 0 0-4 2"/><path d="m7 10 1.5 1.5L11 9"/></svg></div>
+            <h2 class="text-2xl font-semibold tracking-tight">每个答案，都有据可查。</h2>
+            <p class="mb-6 mt-3 text-sm leading-7 text-slate-500">从一个问题开始。我会检索相关制度、读取原文，并将答案与引用一起呈现。资料不足或条款冲突时，也会明确告诉你。</p>
+            <div class="mb-3 flex items-center justify-between"><h3 class="text-xs font-medium tracking-wide text-slate-400">试试这些场景</h3><span class="text-[11px] text-slate-400">选择后点击发送</span></div>
+            <div id="examples" class="grid gap-2.5 sm:grid-cols-2"></div>
+          </div>
+          <div id="messages" class="space-y-6"></div>
+        </div>
+
+        <form id="ask-form" class="border-t border-slate-100 bg-white p-4 md:px-6">
+          <label for="question" class="sr-only">输入制度或产品问题</label>
+          <div class="rounded-xl border border-slate-200 bg-slate-50/50 p-3 transition focus-within:border-blue-400 focus-within:ring-2 focus-within:ring-blue-50">
+            <textarea id="question" rows="2" maxlength="4000" class="w-full resize-none bg-transparent text-sm leading-6 outline-none placeholder:text-slate-400" placeholder="例如：报销期限多久？需要哪些凭证？" required></textarea>
+            <div class="mt-2 flex items-center justify-between gap-2"><span class="text-[11px] text-slate-400">Ctrl + Enter 发送<span class="hidden sm:inline"> · 支持上下文追问</span></span><div class="flex gap-2"><button id="stop" type="button" class="btn-secondary hidden">停止</button><button id="send" type="submit" class="btn-primary">发送问题 <span aria-hidden="true">↗</span></button></div></div>
+          </div>
+          <p class="mt-2.5 text-center text-[11px] leading-5 text-slate-400">答案仅依据当前合成资料，适用范围不明时请确认制度。</p>
+        </form>
+      </section>
+
+      <aside class="min-w-0 space-y-4">
+        <details id="trace-panel" open class="overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm">
+          <summary class="flex cursor-pointer list-none items-center justify-between border-b border-slate-100 px-5 py-4"><span class="flex items-center gap-2 text-sm font-semibold"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><path d="M8 5h13M8 12h13M8 19h13"/><circle cx="3" cy="5" r="1"/><circle cx="3" cy="12" r="1"/><circle cx="3" cy="19" r="1"/></svg>执行记录</span><span class="text-xs text-slate-400">展开 / 收起</span></summary>
+          <div class="p-5">
+            <div class="mb-5 flex items-center justify-between"><span id="run-status" class="badge badge-neutral" role="status">等待提问</span><span id="elapsed" class="text-xs tabular-nums text-slate-400">—</span></div>
+            <div id="trace-empty" class="rounded-xl border border-dashed border-slate-200 bg-slate-50/60 px-4 py-7 text-center"><div class="mb-2 text-xl text-slate-300" aria-hidden="true">⌁</div><p class="text-sm text-slate-500">执行过程会在这里展开</p><p class="mt-2 text-xs leading-6 text-slate-400">发送问题后，实时查看检索、原文读取与核验步骤。</p></div>
+            <ol id="trace" class="space-y-4" aria-live="polite" aria-label="实际执行步骤"></ol>
+            <p id="run-meta" class="mt-4 break-all text-[10px] leading-5 text-slate-400"></p>
+            <div class="mt-4 grid grid-cols-2 gap-2"><button id="download-result" type="button" class="btn-secondary justify-center text-xs" disabled>下载结果</button><button id="download-trace" type="button" class="btn-secondary justify-center text-xs" disabled>下载记录</button></div>
+          </div>
+        </details>
+        <section class="rounded-2xl border border-blue-100 bg-blue-50/60 p-5"><div class="mb-3 flex items-center gap-2 text-sm font-semibold text-blue-900"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><path d="m12 3 8 3v6c0 5-8 9-8 9s-8-4-8-9V6z"/><path d="m8 12 3 3 5-6"/></svg>可靠答案的三个信号</div><ul class="space-y-3 text-xs leading-6 text-slate-500"><li><strong class="font-medium text-slate-700">原文可查</strong><br>引用标注文档、版本与原文片段。</li><li><strong class="font-medium text-slate-700">冲突透明</strong><br>不凭版本日期擅自选择适用制度。</li><li><strong class="font-medium text-slate-700">边界明确</strong><br>资料不足和执行失败都有明确状态。</li></ul></section>
+        <p class="px-1 text-[11px] leading-6 text-slate-400">本地运行 · 合成制度资料<br>页面历史在刷新后清空，运行记录保存在本机。</p>
+      </aside>
+    </div>
+    <footer class="mt-6 flex flex-wrap items-center justify-between gap-2 text-[10px] tracking-wide text-slate-400"><span>知据 / KNOWLEDGE WITH A SOURCE</span><a href="/docs" target="_blank" rel="noopener" class="hover:text-blue-600">接口文档 ↗</a></footer>
+  </main>
+</body>
+</html>

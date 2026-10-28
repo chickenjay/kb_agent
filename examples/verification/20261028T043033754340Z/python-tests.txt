@@ -1,0 +1,48 @@
+test_actual_observation_and_trace_have_same_budget (test_agent.AgentTests.test_actual_observation_and_trace_have_same_budget) ... ok
+test_all_acceptance_scenarios_with_explicit_mock (test_agent.AgentTests.test_all_acceptance_scenarios_with_explicit_mock) ... ok
+test_cancel_between_model_and_tool (test_agent.AgentTests.test_cancel_between_model_and_tool) ... ok
+test_corpus_replacement_changes_answer (test_agent.AgentTests.test_corpus_replacement_changes_answer) ... ok
+test_interrupted_run_keeps_collected_sources_without_new_claim (test_agent.AgentTests.test_interrupted_run_keeps_collected_sources_without_new_claim) ... ok
+test_invalid_model_actions_consume_budget (test_agent.AgentTests.test_invalid_model_actions_consume_budget) ... ok
+test_model_failure_never_falls_back_to_mock (test_agent.AgentTests.test_model_failure_never_falls_back_to_mock) ... ok
+test_observations_change_next_actions (test_agent.AgentTests.test_observations_change_next_actions) ... ok
+test_reruns_preserve_previous_outputs (test_agent.AgentTests.test_reruns_preserve_previous_outputs) ... ok
+test_tool_budget_and_final_event (test_agent.AgentTests.test_tool_budget_and_final_event) ... ok
+test_validator_feedback_drives_correction (test_agent.AgentTests.test_validator_feedback_drives_correction) ... ok
+test_blank_question_and_illegal_history_rejected (test_api.ApiTests.test_blank_question_and_illegal_history_rejected) ... ok
+test_examples_cover_required_scenarios (test_api.ApiTests.test_examples_cover_required_scenarios) ... ok
+test_failure_after_stream_started_has_final_incomplete (test_api.ApiTests.test_failure_after_stream_started_has_final_incomplete) ... ok
+test_health_has_no_secrets (test_api.ApiTests.test_health_has_no_secrets) ... ok
+test_page_assets_and_docs_served (test_api.ApiTests.test_page_assets_and_docs_served) ... ok
+test_stream_sequence_and_final (test_api.ApiTests.test_stream_sequence_and_final) ... ok
+test_two_requests_do_not_share_state (test_api.ApiTests.test_two_requests_do_not_share_state) ... ok
+test_unconfigured_live_is_503 (test_api.ApiTests.test_unconfigured_live_is_503) ... ok
+test_unknown_scenario_is_400 (test_api.ApiTests.test_unknown_scenario_is_400) ... ok
+test_missing_live_configuration_is_nonzero_and_never_mock (test_cli.CliTests.test_missing_live_configuration_is_nonzero_and_never_mock) ... ok
+test_success_stdout_is_utf8_and_matches_saved_output (test_cli.CliTests.test_success_stdout_is_utf8_and_matches_saved_output) ... ok
+test_tool_failure_is_nonzero_with_truthful_output (test_cli.CliTests.test_tool_failure_is_nonzero_with_truthful_output) ... ok
+test_conflicting_sources_both_retrievable (test_corpus.CorpusTests.test_conflicting_sources_both_retrievable) ... ok
+test_duplicate_ids_rejected (test_corpus.CorpusTests.test_duplicate_ids_rejected) ... ok
+test_empty_search_is_successful_empty_result (test_corpus.CorpusTests.test_empty_search_is_successful_empty_result) ... ok
+test_mutation_changes_snapshot_and_read (test_corpus.CorpusTests.test_mutation_changes_snapshot_and_read) ... ok
+test_paragraph_positions_match_original (test_corpus.CorpusTests.test_paragraph_positions_match_original) ... ok
+test_synonym_expansion_improves_isolated_paraphrase (test_corpus.CorpusTests.test_synonym_expansion_improves_isolated_paraphrase) ... ok
+test_truncation_is_explicit (test_corpus.CorpusTests.test_truncation_is_explicit) ... ok
+test_unknown_snippet_is_error (test_corpus.CorpusTests.test_unknown_snippet_is_error) ... ok
+test_http_error_is_safe_and_not_retried (test_models.LiveTransportTests.test_http_error_is_safe_and_not_retried) ... ok
+test_malformed_completion_is_model_failure (test_models.LiveTransportTests.test_malformed_completion_is_model_failure) ... ok
+test_missing_config_is_explicit (test_models.LiveTransportTests.test_missing_config_is_explicit) ... ok
+test_request_shape_and_json_action (test_models.LiveTransportTests.test_request_shape_and_json_action) ... ok
+test_answer_requires_evidence_and_no_unresolved_gap (test_validation.ValidationTests.test_answer_requires_evidence_and_no_unresolved_gap) ... ok
+test_clarification_requires_question_and_gap (test_validation.ValidationTests.test_clarification_requires_question_and_gap) ... ok
+test_conflict_requires_two_distinct_cited_documents (test_validation.ValidationTests.test_conflict_requires_two_distinct_cited_documents) ... ok
+test_enrichment_comes_from_source (test_validation.ValidationTests.test_enrichment_comes_from_source) ... ok
+test_fake_quote_and_wrong_version_rejected (test_validation.ValidationTests.test_fake_quote_and_wrong_version_rejected) ... ok
+test_incomplete_must_report_failure_reason (test_validation.ValidationTests.test_incomplete_must_report_failure_reason) ... ok
+test_original_quote_does_not_guarantee_semantic_support (test_validation.ValidationTests.test_original_quote_does_not_guarantee_semantic_support) ... ok
+test_unread_source_rejected (test_validation.ValidationTests.test_unread_source_rejected) ... ok
+
+----------------------------------------------------------------------
+Ran 43 tests in 6.833s
+
+OK

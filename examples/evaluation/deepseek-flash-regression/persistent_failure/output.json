@@ -1,0 +1,13 @@
+{
+  "status": "incomplete",
+  "answer": "检索工具连续两次不可用，无法读取报销期限相关制度原文，因此本轮无法给出期限结论。",
+  "citations": [],
+  "conflicts": [],
+  "gaps": [
+    "未能检索并读取报销期限相关制度条款"
+  ],
+  "follow_up_question": "是否稍后重试检索报销期限相关制度？",
+  "termination_reason": "tool_failure",
+  "run_id": "3cbcb84fe2744df8b934b45528ef2f5c",
+  "mode": "live"
+}

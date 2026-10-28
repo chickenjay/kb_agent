@@ -1,0 +1,13 @@
+{
+  "status": "insufficient_evidence",
+  "answer": "当前资料中没有找到能够支持该问题答案的原文。",
+  "citations": [],
+  "conflicts": [],
+  "gaps": [
+    "缺少与问题直接相关的制度或产品资料。"
+  ],
+  "follow_up_question": null,
+  "termination_reason": "insufficient_evidence",
+  "run_id": "87b8cefb6a86482b8b3f138c0c6fb3ed",
+  "mode": "mock"
+}

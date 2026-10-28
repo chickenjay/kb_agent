@@ -1,0 +1,11 @@
+{
+  "description": "明确替代依据来自原文，不能只比较版本日期。",
+  "status": "answered",
+  "required_documents": [
+    "D02"
+  ],
+  "answer_contains": [
+    "15"
+  ],
+  "no_conflicts": true
+}

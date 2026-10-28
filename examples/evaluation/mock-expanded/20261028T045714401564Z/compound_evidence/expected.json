@@ -1,0 +1,14 @@
+{
+  "description": "复合问题需要组合两份制度证据。",
+  "status": "answered",
+  "required_documents": [
+    "D03",
+    "D04"
+  ],
+  "answer_contains": [
+    "500",
+    "发票",
+    "行程单",
+    "出差申请"
+  ]
+}

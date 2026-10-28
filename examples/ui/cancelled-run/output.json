@@ -1,0 +1,13 @@
+{
+  "status": "incomplete",
+  "answer": "任务已停止，未完成。",
+  "citations": [],
+  "conflicts": [],
+  "gaps": [
+    "本次任务尚未完成；已取得的证据仅供检查，不能替代最终结论。"
+  ],
+  "follow_up_question": null,
+  "termination_reason": "user_cancelled",
+  "run_id": "493882a174cc4083b8583a860c6edd4e",
+  "mode": "mock"
+}

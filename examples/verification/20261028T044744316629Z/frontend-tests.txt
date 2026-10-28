@@ -1,0 +1,22 @@
+✔ UTF-8 Chinese split at every byte with CRLF and heartbeats (1.6671ms)
+✔ multiple events in one chunk and split event delimiter (0.1867ms)
+✔ unterminated final event never counts as completed (16.5635ms)
+✔ normal stream finishes exactly once (0.5994ms)
+✔ network end without final is failure and makes no second fetch (0.3255ms)
+✔ wrong run and out of order sequence are rejected (0.3976ms)
+✔ HTTP preflight error remains an error, not a stream (0.924ms)
+✔ multiline data is joined and comment ignored (0.5676ms)
+✔ idle is not completed (0.5338ms)
+✔ tool failure does not finish the whole run (0.1319ms)
+✔ only final makes output available (0.0776ms)
+✔ interruption and cancellation are incomplete with no fabricated output (0.6224ms)
+✔ an incomplete final is never presented as successful answer (0.0939ms)
+✔ events cannot leak into a finished run (0.1832ms)
+ℹ tests 14
+ℹ suites 0
+ℹ pass 14
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 108.8052

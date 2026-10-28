@@ -1,0 +1,15 @@
+{
+  "name": "evidence-kb-web",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build:css": "tailwindcss -i web/styles/input.css -o web/static/style.css --minify",
+    "watch:css": "tailwindcss -i web/styles/input.css -o web/static/style.css --watch",
+    "test": "node --test tests/frontend/*.test.mjs"
+  },
+  "devDependencies": {
+    "tailwindcss": "^4.1.0",
+    "@tailwindcss/cli": "^4.1.0"
+  }
+}

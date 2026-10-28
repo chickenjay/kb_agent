@@ -1,0 +1,36 @@
+{
+  "recorded_at": "2026-10-28T04:58:10.596135+00:00",
+  "requested_model": "deepseek-flash",
+  "base_url": "https://api.deepseek.com",
+  "runs": [
+    {
+      "stage": "initial_connectivity",
+      "passed": 2,
+      "total": 2,
+      "status": "passed",
+      "summary": "deepseek-flash-initial/summary.json"
+    },
+    {
+      "stage": "first_full",
+      "passed": 17,
+      "total": 20,
+      "status": "failed",
+      "summary": "deepseek-flash-full/summary.json"
+    },
+    {
+      "stage": "targeted_retest",
+      "passed": 3,
+      "total": 3,
+      "status": "passed",
+      "summary": "deepseek-flash-targeted/summary.json"
+    },
+    {
+      "stage": "full_regression",
+      "passed": 20,
+      "total": 20,
+      "status": "passed",
+      "summary": "deepseek-flash-regression/summary.json"
+    }
+  ],
+  "human_semantic_review": "pending"
+}

@@ -1,0 +1,19 @@
+[build-system]
+requires = ["setuptools>=65.5", "wheel>=0.40"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "evidence-kb-agent"
+version = "0.1.0"
+description = "Evidence-first enterprise knowledge agent with CLI and streaming web UI"
+requires-python = ">=3.11"
+dependencies = ["langgraph==1.2.18", "fastapi>=0.128,<1", "uvicorn>=0.30,<1", "pydantic>=2.7,<3"]
+
+[project.scripts]
+kb-agent = "kb_agent.cli:main"
+
+[tool.setuptools]
+# Explicit package mapping makes editable installs use the import finder. Its
+# ASCII .pth bootstrap avoids Python 3.11 locale decoding of Chinese paths.
+packages = ["kb_agent"]
+package-dir = {"kb_agent" = "src/kb_agent"}

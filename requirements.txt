@@ -1,0 +1,6 @@
+# Exact tested environment is recorded in requirements.lock.txt after installation.
+langgraph==1.2.18
+fastapi>=0.128,<1
+uvicorn>=0.30,<1
+pydantic>=2.7,<3
+httpx>=0.27,<1

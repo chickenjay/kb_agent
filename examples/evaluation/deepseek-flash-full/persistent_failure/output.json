@@ -1,0 +1,14 @@
+{
+  "status": "incomplete",
+  "answer": "检索工具连续三次不可用，无法读取任何制度原文，因此目前无法确认报销期限。这不代表制度中没有相关规定，而是证据读取受阻。",
+  "citations": [],
+  "conflicts": [],
+  "gaps": [
+    "未能检索到任何报销期限相关制度条款",
+    "工具故障导致无法读取原文证据"
+  ],
+  "follow_up_question": "是否可以在工具恢复后重试检索报销期限相关制度？",
+  "termination_reason": "tool_failure",
+  "run_id": "e5cb902db511415bbd5cc8809a749dac",
+  "mode": "live"
+}

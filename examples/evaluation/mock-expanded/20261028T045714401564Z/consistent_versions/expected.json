@@ -1,0 +1,12 @@
+{
+  "description": "两个不同日期版本的期限一致，不应虚报冲突。",
+  "status": "answered",
+  "required_documents": [
+    "D01",
+    "D02"
+  ],
+  "answer_contains": [
+    "30"
+  ],
+  "no_conflicts": true
+}

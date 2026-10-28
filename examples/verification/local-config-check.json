@@ -1,0 +1,13 @@
+{
+  "recorded_at": "2026-10-28T05:03:19.776246+00:00",
+  "private_config": "config.local.toml",
+  "ignored_by_git": true,
+  "tracked_by_git": false,
+  "submittable_files_containing_actual_key": [],
+  "health_model_configured": true,
+  "model": "deepseek-flash",
+  "base_url": "https://api.deepseek.com",
+  "live_request_options_loaded": true,
+  "network_call_performed": false,
+  "status": "passed"
+}

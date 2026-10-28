@@ -1,0 +1,15 @@
+{
+  "description": "同一文档的两个段落分别支持两项结论。",
+  "status": "answered",
+  "required_documents": [
+    "D03"
+  ],
+  "required_snippets": [
+    "D03:p1",
+    "D03:p2"
+  ],
+  "answer_contains": [
+    "500",
+    "书面批准"
+  ]
+}

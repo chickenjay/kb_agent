@@ -1,0 +1,22 @@
+{
+  "status": "incomplete",
+  "answer": "工具连续失败，无法取得全部必要证据，本次任务未完成。",
+  "citations": [
+    {
+      "document_id": "D01",
+      "version_date": "2026-01-10",
+      "snippet_id": "D01:p1",
+      "quote": "报销期限为 30 天。员工应在费用发生后提交申请。",
+      "title": "费用报销管理制度",
+      "snippet_text": "报销期限为 30 天。员工应在费用发生后提交申请。"
+    }
+  ],
+  "conflicts": [],
+  "gaps": [
+    "相关制度暂时无法检索或读取；不能依据部分条款给出唯一结论。"
+  ],
+  "follow_up_question": null,
+  "termination_reason": "tool_failure",
+  "run_id": "96331a44b5a4423bb8e52d80a920d07e",
+  "mode": "mock"
+}

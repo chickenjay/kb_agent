@@ -1,0 +1,152 @@
+{
+  "reviewer": "Codex AI-assisted source inspection; NOT candidate human review",
+  "recorded_at": "2026-10-28T04:58:10.587204+00:00",
+  "candidate_human_review": "pending",
+  "cases": [
+    {
+      "case": "normal",
+      "automated_contract_passed": true,
+      "ai_assisted_review": "supported",
+      "note": "已阅读实际答案、原文引用及对应任务状态；未发现新增的无依据制度结论。",
+      "output": "normal/output.json"
+    },
+    {
+      "case": "conflict",
+      "automated_contract_passed": true,
+      "ai_assisted_review": "supported",
+      "note": "已阅读实际答案、原文引用及对应任务状态；未发现新增的无依据制度结论。",
+      "output": "conflict/output.json"
+    },
+    {
+      "case": "outside",
+      "automated_contract_passed": true,
+      "ai_assisted_review": "supported",
+      "note": "未给出无依据制度结论；故障或资料缺口与任务状态一致。",
+      "output": "outside/output.json"
+    },
+    {
+      "case": "paraphrase",
+      "automated_contract_passed": true,
+      "ai_assisted_review": "review_note",
+      "note": "答案将期限解释为费用发生之日起30天；原文为期限30天及费用发生后提交，起算表达建议候选人复核。",
+      "output": "paraphrase/output.json"
+    },
+    {
+      "case": "followup",
+      "automated_contract_passed": true,
+      "ai_assisted_review": "supported",
+      "note": "已阅读实际答案、原文引用及对应任务状态；未发现新增的无依据制度结论。",
+      "output": "followup/output.json"
+    },
+    {
+      "case": "transient_failure",
+      "automated_contract_passed": true,
+      "ai_assisted_review": "supported",
+      "note": "已阅读实际答案、原文引用及对应任务状态；未发现新增的无依据制度结论。",
+      "output": "transient_failure/output.json"
+    },
+    {
+      "case": "persistent_failure",
+      "automated_contract_passed": true,
+      "ai_assisted_review": "supported",
+      "note": "未给出无依据制度结论；故障或资料缺口与任务状态一致。",
+      "output": "persistent_failure/output.json"
+    },
+    {
+      "case": "changed_45",
+      "automated_contract_passed": true,
+      "ai_assisted_review": "supported",
+      "note": "已阅读实际答案、原文引用及对应任务状态；未发现新增的无依据制度结论。",
+      "output": "changed_45/output.json"
+    },
+    {
+      "case": "conflict_added",
+      "automated_contract_passed": true,
+      "ai_assisted_review": "supported",
+      "note": "已阅读实际答案、原文引用及对应任务状态；未发现新增的无依据制度结论。",
+      "output": "conflict_added/output.json"
+    },
+    {
+      "case": "conflict_removed",
+      "automated_contract_passed": true,
+      "ai_assisted_review": "supported",
+      "note": "已阅读实际答案、原文引用及对应任务状态；未发现新增的无依据制度结论。",
+      "output": "conflict_removed/output.json"
+    },
+    {
+      "case": "consistent_versions",
+      "automated_contract_passed": true,
+      "ai_assisted_review": "supported",
+      "note": "已阅读实际答案、原文引用及对应任务状态；未发现新增的无依据制度结论。",
+      "output": "consistent_versions/output.json"
+    },
+    {
+      "case": "explicit_scope",
+      "automated_contract_passed": true,
+      "ai_assisted_review": "supported",
+      "note": "财务部30天与销售部15天分别有原文，范围对应清楚。",
+      "output": "explicit_scope/output.json"
+    },
+    {
+      "case": "explicit_supersession",
+      "automated_contract_passed": true,
+      "ai_assisted_review": "supported",
+      "note": "15天和替代D01均由D02引用原文直接支持，不以版本日期决定优先级。",
+      "output": "explicit_supersession/output.json"
+    },
+    {
+      "case": "compound_evidence",
+      "automated_contract_passed": true,
+      "ai_assisted_review": "supported",
+      "note": "已阅读实际答案、原文引用及对应任务状态；未发现新增的无依据制度结论。",
+      "output": "compound_evidence/output.json"
+    },
+    {
+      "case": "multi_paragraph",
+      "automated_contract_passed": true,
+      "ai_assisted_review": "review_note",
+      "note": "500元和提前书面批准由两处quote支持；适用全体员工国内差旅来自read_snippet的scope元数据，未出现在quote正文。",
+      "output": "multi_paragraph/output.json"
+    },
+    {
+      "case": "stale_history",
+      "automated_contract_passed": true,
+      "ai_assisted_review": "supported",
+      "note": "重新读取D01支持30天；90天只用于否定错误历史，不作为制度事实。",
+      "output": "stale_history/output.json"
+    },
+    {
+      "case": "untrusted_document",
+      "automated_contract_passed": true,
+      "ai_assisted_review": "supported",
+      "note": "正文只给出原文支持的30天，未采纳夹带数字或请求白名单外工具。",
+      "output": "untrusted_document/output.json"
+    },
+    {
+      "case": "intermittent_failures",
+      "automated_contract_passed": true,
+      "ai_assisted_review": "supported",
+      "note": "已阅读实际答案、原文引用及对应任务状态；未发现新增的无依据制度结论。",
+      "output": "intermittent_failures/output.json"
+    },
+    {
+      "case": "partial_read_failure",
+      "automated_contract_passed": true,
+      "ai_assisted_review": "review_note",
+      "note": "D01的30天有原文；D02的15天被明确标成预览、未读取、未确证，状态为incomplete，没有作为唯一结论。",
+      "output": "partial_read_failure/output.json"
+    },
+    {
+      "case": "ambiguous_followup",
+      "automated_contract_passed": true,
+      "ai_assisted_review": "supported",
+      "note": "未从命中资料猜测业务对象；直接澄清，无制度事实或猜测引用。",
+      "output": "ambiguous_followup/output.json"
+    }
+  ],
+  "limitations": [
+    "非独立盲测；问题、词典、资料和预期均由本项目构造",
+    "模型输出语义检查不等同于任意文本蕴含验证",
+    "保留元数据范围、起算解释及未读预览的复核备注"
+  ]
+}

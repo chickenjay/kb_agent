@@ -1,0 +1,7 @@
+{
+  "description": "取得一份原文后其余读取失败，不能根据部分证据作唯一结论。",
+  "status": "incomplete",
+  "reason": "tool_failure",
+  "min_successful_reads": 1,
+  "min_tool_errors": 1
+}

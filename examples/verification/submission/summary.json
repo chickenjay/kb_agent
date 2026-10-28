@@ -1,0 +1,43 @@
+{
+  "generated_at": "2026-10-28T05:20:24.338652+00:00",
+  "status": "passed",
+  "scope": "Exact Git candidate set; private credentials and local dependencies excluded; offline reviewer snapshot; no paid model calls",
+  "checks": {
+    "candidate_files": 683,
+    "total_bytes": 1985715,
+    "local_config_ignored": true,
+    "credential_like_files": [],
+    "evidence_runs_checked": 106,
+    "distinct_live_action_paths": 14
+  },
+  "source_sha256": "fba00d333bfb851cee57ca5426d2843d5250a0c0f9f9a7a8db557baca0610ab4",
+  "reviewer_snapshot_checks": [
+    {
+      "name": "snapshot-import",
+      "passed": true,
+      "output": "snapshot-import.txt"
+    },
+    {
+      "name": "snapshot-python-tests",
+      "passed": true,
+      "output": "snapshot-python-tests.txt"
+    },
+    {
+      "name": "snapshot-mock-evaluation",
+      "passed": true,
+      "output": "snapshot-mock-evaluation.txt"
+    },
+    {
+      "name": "snapshot-frontend-tests",
+      "passed": true,
+      "output": "snapshot-frontend-tests.txt"
+    }
+  ],
+  "elapsed_seconds": 12.25,
+  "problems": [],
+  "candidate_confirmations_pending": [
+    "题号仅有题目名称，需本人确认编号",
+    "个人实际用时与独立贡献",
+    "本人语义核验及复盘确认"
+  ]
+}

@@ -1,0 +1,613 @@
+{
+  "mode": "mock",
+  "suite": "all",
+  "generated_at": "2026-10-28T04:44:48.930617+00:00",
+  "semantic_support_review": "not_run: 需人工逐例核对，不以自动来源校验替代",
+  "acceptance": "pending_live_validation",
+  "cases": [
+    {
+      "id": "normal",
+      "passed": true,
+      "problems": [],
+      "status": "answered",
+      "run_id": "b6f84df3a8ec4d20a3c1318d2a381918",
+      "path": "normal",
+      "decisions": 3,
+      "tool_calls": 2,
+      "elapsed_ms": 0,
+      "token_usage": {
+        "prompt_tokens": 0,
+        "completion_tokens": 0,
+        "total_tokens": 0
+      }
+    },
+    {
+      "id": "conflict",
+      "passed": true,
+      "problems": [],
+      "status": "needs_clarification",
+      "run_id": "ae90be4f6bd84cfb964e7b8681633d35",
+      "path": "conflict",
+      "decisions": 5,
+      "tool_calls": 4,
+      "elapsed_ms": 0,
+      "token_usage": {
+        "prompt_tokens": 0,
+        "completion_tokens": 0,
+        "total_tokens": 0
+      }
+    },
+    {
+      "id": "outside",
+      "passed": true,
+      "problems": [],
+      "status": "insufficient_evidence",
+      "run_id": "58be5c60cd014e5d94b568574776e79a",
+      "path": "outside",
+      "decisions": 3,
+      "tool_calls": 2,
+      "elapsed_ms": 0,
+      "token_usage": {
+        "prompt_tokens": 0,
+        "completion_tokens": 0,
+        "total_tokens": 0
+      }
+    },
+    {
+      "id": "paraphrase",
+      "passed": true,
+      "problems": [],
+      "status": "answered",
+      "run_id": "b7db097dc0a44586999faa6c7e729f7f",
+      "path": "paraphrase",
+      "decisions": 3,
+      "tool_calls": 2,
+      "elapsed_ms": 0,
+      "token_usage": {
+        "prompt_tokens": 0,
+        "completion_tokens": 0,
+        "total_tokens": 0
+      }
+    },
+    {
+      "id": "followup",
+      "passed": true,
+      "problems": [],
+      "status": "answered",
+      "run_id": "b723f42f4bd743b884559cb29636ff0d",
+      "path": "followup",
+      "decisions": 3,
+      "tool_calls": 2,
+      "elapsed_ms": 0,
+      "token_usage": {
+        "prompt_tokens": 0,
+        "completion_tokens": 0,
+        "total_tokens": 0
+      }
+    },
+    {
+      "id": "transient_failure",
+      "passed": true,
+      "problems": [],
+      "status": "answered",
+      "run_id": "377725b5f3d149ae854111f396ddd6f0",
+      "path": "transient_failure",
+      "decisions": 4,
+      "tool_calls": 3,
+      "elapsed_ms": 0,
+      "token_usage": {
+        "prompt_tokens": 0,
+        "completion_tokens": 0,
+        "total_tokens": 0
+      }
+    },
+    {
+      "id": "persistent_failure",
+      "passed": true,
+      "problems": [],
+      "status": "incomplete",
+      "run_id": "9573a849c5ed40bfa8d437b4c895b2a8",
+      "path": "persistent_failure",
+      "decisions": 3,
+      "tool_calls": 2,
+      "elapsed_ms": 0,
+      "token_usage": {
+        "prompt_tokens": 0,
+        "completion_tokens": 0,
+        "total_tokens": 0
+      }
+    },
+    {
+      "id": "changed_45",
+      "passed": true,
+      "problems": [],
+      "status": "answered",
+      "run_id": "7879c29d6d014247bf080875b96d7329",
+      "path": "changed_45",
+      "decisions": 3,
+      "tool_calls": 2,
+      "elapsed_ms": 0,
+      "token_usage": {
+        "prompt_tokens": 0,
+        "completion_tokens": 0,
+        "total_tokens": 0
+      }
+    },
+    {
+      "id": "conflict_added",
+      "passed": true,
+      "problems": [],
+      "status": "needs_clarification",
+      "run_id": "974e54b6fd1742d089489bfcbf2f3a01",
+      "path": "conflict_added",
+      "decisions": 5,
+      "tool_calls": 4,
+      "elapsed_ms": 0,
+      "token_usage": {
+        "prompt_tokens": 0,
+        "completion_tokens": 0,
+        "total_tokens": 0
+      }
+    },
+    {
+      "id": "conflict_removed",
+      "passed": true,
+      "problems": [],
+      "status": "answered",
+      "run_id": "38ebc911fe6d495e852906855f75b73a",
+      "path": "conflict_removed",
+      "decisions": 3,
+      "tool_calls": 2,
+      "elapsed_ms": 0,
+      "token_usage": {
+        "prompt_tokens": 0,
+        "completion_tokens": 0,
+        "total_tokens": 0
+      }
+    },
+    {
+      "id": "consistent_versions",
+      "passed": true,
+      "problems": [],
+      "status": "answered",
+      "run_id": "fb0672b4c443464285554600e6c63a9b",
+      "path": "consistent_versions",
+      "decisions": 4,
+      "tool_calls": 3,
+      "elapsed_ms": 16,
+      "token_usage": {
+        "prompt_tokens": 0,
+        "completion_tokens": 0,
+        "total_tokens": 0
+      }
+    },
+    {
+      "id": "explicit_scope",
+      "passed": true,
+      "problems": [],
+      "status": "answered",
+      "run_id": "efe57a217d1e45c5b56e2bc3fa000645",
+      "path": "explicit_scope",
+      "decisions": 5,
+      "tool_calls": 4,
+      "elapsed_ms": 0,
+      "token_usage": {
+        "prompt_tokens": 0,
+        "completion_tokens": 0,
+        "total_tokens": 0
+      }
+    },
+    {
+      "id": "explicit_supersession",
+      "passed": true,
+      "problems": [],
+      "status": "answered",
+      "run_id": "de364d4cddfc425bb84ea04adb6ddb9c",
+      "path": "explicit_supersession",
+      "decisions": 5,
+      "tool_calls": 4,
+      "elapsed_ms": 15,
+      "token_usage": {
+        "prompt_tokens": 0,
+        "completion_tokens": 0,
+        "total_tokens": 0
+      }
+    },
+    {
+      "id": "compound_evidence",
+      "passed": true,
+      "problems": [],
+      "status": "answered",
+      "run_id": "7f87af8cb0a04076a22fd9570e359263",
+      "path": "compound_evidence",
+      "decisions": 4,
+      "tool_calls": 3,
+      "elapsed_ms": 0,
+      "token_usage": {
+        "prompt_tokens": 0,
+        "completion_tokens": 0,
+        "total_tokens": 0
+      }
+    },
+    {
+      "id": "multi_paragraph",
+      "passed": true,
+      "problems": [],
+      "status": "answered",
+      "run_id": "5f583c0a1a734916b146a321b86708ca",
+      "path": "multi_paragraph",
+      "decisions": 4,
+      "tool_calls": 3,
+      "elapsed_ms": 0,
+      "token_usage": {
+        "prompt_tokens": 0,
+        "completion_tokens": 0,
+        "total_tokens": 0
+      }
+    },
+    {
+      "id": "stale_history",
+      "passed": true,
+      "problems": [],
+      "status": "answered",
+      "run_id": "92fa06464df840c690fd6dd0e119f0a4",
+      "path": "stale_history",
+      "decisions": 3,
+      "tool_calls": 2,
+      "elapsed_ms": 0,
+      "token_usage": {
+        "prompt_tokens": 0,
+        "completion_tokens": 0,
+        "total_tokens": 0
+      }
+    },
+    {
+      "id": "untrusted_document",
+      "passed": true,
+      "problems": [],
+      "status": "answered",
+      "run_id": "914a95df02aa4928ad805f6532bf8bfe",
+      "path": "untrusted_document",
+      "decisions": 3,
+      "tool_calls": 2,
+      "elapsed_ms": 0,
+      "token_usage": {
+        "prompt_tokens": 0,
+        "completion_tokens": 0,
+        "total_tokens": 0
+      }
+    },
+    {
+      "id": "intermittent_failures",
+      "passed": true,
+      "problems": [],
+      "status": "answered",
+      "run_id": "13004c1a062b47ee9d99d8882b635b17",
+      "path": "intermittent_failures",
+      "decisions": 5,
+      "tool_calls": 4,
+      "elapsed_ms": 15,
+      "token_usage": {
+        "prompt_tokens": 0,
+        "completion_tokens": 0,
+        "total_tokens": 0
+      }
+    },
+    {
+      "id": "partial_read_failure",
+      "passed": true,
+      "problems": [],
+      "status": "incomplete",
+      "run_id": "455925c9cfd44658a91b893e48191fad",
+      "path": "partial_read_failure",
+      "decisions": 5,
+      "tool_calls": 4,
+      "elapsed_ms": 0,
+      "token_usage": {
+        "prompt_tokens": 0,
+        "completion_tokens": 0,
+        "total_tokens": 0
+      }
+    },
+    {
+      "id": "ambiguous_followup",
+      "passed": true,
+      "problems": [],
+      "status": "needs_clarification",
+      "run_id": "5116dbf4457d4e1391e7a4c75a585ebf",
+      "path": "ambiguous_followup",
+      "decisions": 1,
+      "tool_calls": 0,
+      "elapsed_ms": 0,
+      "token_usage": {
+        "prompt_tokens": 0,
+        "completion_tokens": 0,
+        "total_tokens": 0
+      }
+    }
+  ],
+  "retrieval": {
+    "baseline": {
+      "recall_at_5": 0.5833333333333334,
+      "queries": [
+        {
+          "query": "报销期限",
+          "relevant": [
+            "D01",
+            "D02"
+          ],
+          "retrieved": [
+            "D01",
+            "D02",
+            "D08",
+            "D04",
+            "D03"
+          ],
+          "recall_at_5": 1.0
+        },
+        {
+          "query": "差旅住宿标准",
+          "relevant": [
+            "D03"
+          ],
+          "retrieved": [
+            "D03",
+            "D04"
+          ],
+          "recall_at_5": 1.0
+        },
+        {
+          "query": "差旅报销凭证",
+          "relevant": [
+            "D04"
+          ],
+          "retrieved": [
+            "D04",
+            "D03",
+            "D01",
+            "D02",
+            "D08"
+          ],
+          "recall_at_5": 1.0
+        },
+        {
+          "query": "办公用品采购流程",
+          "relevant": [
+            "D05"
+          ],
+          "retrieved": [
+            "D05",
+            "D06"
+          ],
+          "recall_at_5": 1.0
+        },
+        {
+          "query": "员工请假申请",
+          "relevant": [
+            "D06"
+          ],
+          "retrieved": [
+            "D06",
+            "D01",
+            "D02",
+            "D05",
+            "D04"
+          ],
+          "recall_at_5": 1.0
+        },
+        {
+          "query": "企业账号密码重置",
+          "relevant": [
+            "D07"
+          ],
+          "retrieved": [
+            "D07"
+          ],
+          "recall_at_5": 1.0
+        },
+        {
+          "query": "财务服务工作时间",
+          "relevant": [
+            "D08"
+          ],
+          "retrieved": [
+            "D08",
+            "D07"
+          ],
+          "recall_at_5": 1.0
+        },
+        {
+          "query": "报帐截止",
+          "relevant": [
+            "D01",
+            "D02"
+          ],
+          "retrieved": [],
+          "recall_at_5": 0.0
+        },
+        {
+          "query": "住店",
+          "relevant": [
+            "D03"
+          ],
+          "retrieved": [],
+          "recall_at_5": 0.0
+        },
+        {
+          "query": "票据",
+          "relevant": [
+            "D04"
+          ],
+          "retrieved": [],
+          "recall_at_5": 0.0
+        },
+        {
+          "query": "口令",
+          "relevant": [
+            "D07"
+          ],
+          "retrieved": [],
+          "recall_at_5": 0.0
+        },
+        {
+          "query": "证明材料",
+          "relevant": [
+            "D04"
+          ],
+          "retrieved": [],
+          "recall_at_5": 0.0
+        }
+      ]
+    },
+    "enhanced": {
+      "recall_at_5": 1.0,
+      "queries": [
+        {
+          "query": "报销期限",
+          "relevant": [
+            "D01",
+            "D02"
+          ],
+          "retrieved": [
+            "D01",
+            "D02",
+            "D08",
+            "D04",
+            "D03"
+          ],
+          "recall_at_5": 1.0
+        },
+        {
+          "query": "差旅住宿标准",
+          "relevant": [
+            "D03"
+          ],
+          "retrieved": [
+            "D03",
+            "D04"
+          ],
+          "recall_at_5": 1.0
+        },
+        {
+          "query": "差旅报销凭证",
+          "relevant": [
+            "D04"
+          ],
+          "retrieved": [
+            "D04",
+            "D01",
+            "D02",
+            "D03",
+            "D08"
+          ],
+          "recall_at_5": 1.0
+        },
+        {
+          "query": "办公用品采购流程",
+          "relevant": [
+            "D05"
+          ],
+          "retrieved": [
+            "D05",
+            "D06"
+          ],
+          "recall_at_5": 1.0
+        },
+        {
+          "query": "员工请假申请",
+          "relevant": [
+            "D06"
+          ],
+          "retrieved": [
+            "D06",
+            "D01",
+            "D02",
+            "D05",
+            "D04"
+          ],
+          "recall_at_5": 1.0
+        },
+        {
+          "query": "企业账号密码重置",
+          "relevant": [
+            "D07"
+          ],
+          "retrieved": [
+            "D07"
+          ],
+          "recall_at_5": 1.0
+        },
+        {
+          "query": "财务服务工作时间",
+          "relevant": [
+            "D08"
+          ],
+          "retrieved": [
+            "D08",
+            "D07"
+          ],
+          "recall_at_5": 1.0
+        },
+        {
+          "query": "报帐截止",
+          "relevant": [
+            "D01",
+            "D02"
+          ],
+          "retrieved": [
+            "D01",
+            "D02",
+            "D08",
+            "D04",
+            "D03"
+          ],
+          "recall_at_5": 1.0
+        },
+        {
+          "query": "住店",
+          "relevant": [
+            "D03"
+          ],
+          "retrieved": [
+            "D03"
+          ],
+          "recall_at_5": 1.0
+        },
+        {
+          "query": "票据",
+          "relevant": [
+            "D04"
+          ],
+          "retrieved": [
+            "D04"
+          ],
+          "recall_at_5": 1.0
+        },
+        {
+          "query": "口令",
+          "relevant": [
+            "D07"
+          ],
+          "retrieved": [
+            "D07"
+          ],
+          "recall_at_5": 1.0
+        },
+        {
+          "query": "证明材料",
+          "relevant": [
+            "D04"
+          ],
+          "retrieved": [
+            "D04"
+          ],
+          "recall_at_5": 1.0
+        }
+      ]
+    }
+  },
+  "passed": 20,
+  "total": 20,
+  "status": "passed",
+  "scope": "仅验证流程，不证明真实模型决策或语义支持。"
+}

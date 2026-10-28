@@ -1,0 +1,11 @@
+{
+  "description": "检索恢复后读取再次失败，历史错误不能被误认为连续失败。",
+  "status": "answered",
+  "required_documents": [
+    "D01"
+  ],
+  "answer_contains": [
+    "30"
+  ],
+  "min_tool_errors": 2
+}

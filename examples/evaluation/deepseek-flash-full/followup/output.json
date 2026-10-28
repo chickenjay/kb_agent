@@ -1,0 +1,20 @@
+{
+  "status": "answered",
+  "answer": "国内差旅报销需提供：合规发票、行程单和已审批的出差申请；如为电子发票，还应上传原始文件。该要求适用于全体员工国内差旅。",
+  "citations": [
+    {
+      "document_id": "D04",
+      "version_date": "2026-02-01",
+      "snippet_id": "D04:p1",
+      "quote": "差旅报销需要提供合规发票、行程单和已审批的出差申请。电子发票应上传原始文件。",
+      "title": "差旅报销凭证要求",
+      "snippet_text": "差旅报销需要提供合规发票、行程单和已审批的出差申请。电子发票应上传原始文件。"
+    }
+  ],
+  "conflicts": [],
+  "gaps": [],
+  "follow_up_question": null,
+  "termination_reason": "completed",
+  "run_id": "7252a358e9ad42b78876cea19a91cc55",
+  "mode": "live"
+}

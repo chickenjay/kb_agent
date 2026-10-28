@@ -1,0 +1,20 @@
+{
+  "status": "answered",
+  "answer": "根据已读取的制度：D01：报销期限为 30 天",
+  "citations": [
+    {
+      "document_id": "D01",
+      "version_date": "2026-01-10",
+      "snippet_id": "D01:p1",
+      "quote": "适用范围：财务部。报销期限为 30 天。",
+      "title": "费用报销管理制度",
+      "snippet_text": "适用范围：财务部。报销期限为 30 天。"
+    }
+  ],
+  "conflicts": [],
+  "gaps": [],
+  "follow_up_question": null,
+  "termination_reason": "completed",
+  "run_id": "3d013a2655e340de80de1686ec53084b",
+  "mode": "mock"
+}
